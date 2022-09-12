@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-from-go
-        image: diegosantana01/hello-from-go:v1.0
+        image: diegosantana01/hello-from-go:v2.0
         ports:
         - containerPort: 8080
         env:
