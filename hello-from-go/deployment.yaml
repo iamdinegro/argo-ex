@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-from-go
+  labels:
+    app: hello-from-go
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-from-go
+  template:
+    metadata:
+      labels:
+        app: hello-from-go
+    spec:
+      containers:
+      - name: hello-from-go
+        image: diegosantana01/hello-from-go:v1.0
+        ports:
+        - containerPort: 8080
+        env:
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+        resources:
+          limits:
+            cpu: 50m
+            memory: 128Mi
+          requests:
+            cpu: 40m
+            memory: 100Mi
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
