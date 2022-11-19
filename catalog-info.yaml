@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: argo-ex
+  annotations:
+    github.com/project-slug: iamdinegro/argo-ex
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
