@@ -6,6 +6,6 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: argo-ex
 spec:
-  type: website
+  type: service
   lifecycle: production
   owner: user:guest
