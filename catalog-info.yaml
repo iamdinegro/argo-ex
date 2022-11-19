@@ -5,6 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: iamdinegro/argo-ex
     backstage.io/kubernetes-id: argo-ex
+    backstage.io/techdocs-ref: argo-ex
     backstage.io/kubernetes-label-selector: hello-from-go
 spec:
   type: other
