@@ -2,12 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: argo-ex
+  description: argo-ex
   annotations:
-    github.com/project-slug: iamdinegro/argo-ex
     backstage.io/kubernetes-id: argo-ex
-    backstage.io/techdocs-ref: argo-ex
-    backstage.io/kubernetes-label-selector: hello-from-go
 spec:
-  type: other
-  lifecycle: unknown
-  owner: guests
+  type: website
+  lifecycle: production
+  owner: user:guest
