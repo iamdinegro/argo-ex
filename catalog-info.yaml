@@ -4,6 +4,7 @@ metadata:
   name: argo-ex
   annotations:
     github.com/project-slug: iamdinegro/argo-ex
+    backstage.io/kubernetes-id: argo-ex
 spec:
   type: other
   lifecycle: unknown
