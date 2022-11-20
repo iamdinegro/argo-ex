@@ -5,6 +5,7 @@ metadata:
   description: argo-ex
   annotations:
     backstage.io/kubernetes-id: argo-ex
+    datadoghq.com/site: datadoghq.com
 spec:
   type: service
   lifecycle: production
