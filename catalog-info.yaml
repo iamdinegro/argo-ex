@@ -6,6 +6,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: argo-ex
     datadoghq.com/site: datadoghq.com
+    datadoghq.com/dashboard-url: https://app.datadoghq.com/s/17f37b20-686b-11ed-9c31-da7ad0900002/9sa-yb4-vhu
 spec:
   type: service
   lifecycle: production
